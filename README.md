@@ -19,6 +19,7 @@ She/They, minimal speaking(usually), loves lore.  
 - [ ] Create, for others
 - [ ] **GO HOME**
 - [ ] Write/Read
+- [ ] Finish personal web page
 
 
 ## Thanks for reading. Fie wishes you good luck and an even greater day
