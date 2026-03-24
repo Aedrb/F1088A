@@ -74,7 +74,7 @@ hr {
     padding: 16px;
 }
 
-
+/* simple grid-template-areas css */
 .container {
   display: grid;
   grid-template-areas:
@@ -85,7 +85,7 @@ hr {
   gap: 3px;
   padding: 5px;
 }
-
+/* set teplate area names */
 .grid-header {
   grid-area: header;
   text-align: center;
@@ -101,8 +101,13 @@ hr {
   text-align: center;  
 }
 
+
+
+
+/* testing */
 .test-left-right {
-  
+  display: grid;
+
 }
 
 
