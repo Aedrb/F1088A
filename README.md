@@ -1,3 +1,4 @@
+
 # F Version F1088A
 ## Aka Fionna
 
@@ -19,8 +20,6 @@ She/They, minimal speaking(usually), loves lore.
 - [ ] Create, for others
 - [ ] **GO HOME**
 - [ ] Write/Read
-
-
 
 
 ## Thanks for reading. Fie wishes you good luck and an even greater day
