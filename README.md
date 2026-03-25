@@ -11,7 +11,7 @@ Fionna, also known as F, was initially a work drone; after her colony was destro
 
 
 ### Traits/Details:
-She/They, minimal speaking(usually), loves lore.  
+She/They, minimal speaking(usually), loves lore.  
 **TOZ-7** is their best and only friend.
 ### Task SET 2/5:
 - [X] Complete SET 1 Tasks(efficiency)
@@ -19,7 +19,8 @@ She/They, minimal speaking(usually), loves lore.  
 - [ ] Create, for others
 - [ ] **GO HOME**
 - [ ] Write/Read
-- [ ] Finish personal web page
+
+
 
 
 ## Thanks for reading. Fie wishes you good luck and an even greater day
