@@ -1,16 +1,47 @@
+:root {
+  --wallpaper-image: url(images/murder-drones-tower-wallpaper.jpeg);
+    
+}
+
 body {
-    margin: 0;
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+  padding: 16px;
+}
+hr {
+  border-width: 5px;
+  box-shadow: 1px 1px;
+}
+/* heading and footing */
+.main-header {
+    background-image: var(--wallpaper-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+    color: white;
+    font-size: 36px;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(255,183,197);
 }
 
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font: Courier;
-}
 
+
+.footer {
+    background-image: var(--wallpaper-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom;
+    
+    padding: 30px;
+
+}
+/* navbar css */
 #navbar {
     position: sticky;
     top: 0;
@@ -30,12 +61,52 @@ body {
     background-color: #ddd;
     color: black;
 }
-
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
+#navbar a:active {
+    background-color: rgb(255,183,197);
+    color: white;
+}
+#navbar .active {
+    background-color: rgb(255,183,197);
+    color: white;
 }
 
-.content {
-  padding: 16px;
+
+
+/* simple grid-template-areas css */
+.container {
+  display: grid;
+  grid-template-areas:
+    ". header header ."
+    ". image content ."
+    ". footer footer .";
+  grid-template-columns: 0.5fr 1.5fr 2.5fr 0.5fr;
+  gap: 3px;
+  padding: 5px;
+}
+/* set teplate area names */
+.grid-header {
+  grid-area: header;
+  text-align: center;
+}
+.grid-image {
+  grid-area: image;
+}
+.grid-content {
+  grid-area: content;
+}
+.grid-footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+
+
+
+/* testing */
+.test-left-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "text image1"
+    "text image2"
 }
