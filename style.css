@@ -40,42 +40,42 @@ hr {
   text-shadow: 2px 2px rgb(255,183,197);
 }
 .footer {
-    background-image: var(--wallpaper-image);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: bottom;
-    
-    padding: 30px;
+  background-image: var(--wallpaper-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom;
+  
+  padding: 30px;
 }
 
 /* navbar css */
 #navbar {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background-color: #333;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 #navbar a:active {
-    background-color: rgb(255,183,197);
-    color: white;
+  background-color: rgb(255,183,197);
+  color: white;
 }
 #navbar .active {
-    background-color: rgb(255,183,197);
-    color: white;
+  background-color: rgb(255,183,197);
+  color: white;
 }
 
 
@@ -117,19 +117,21 @@ hr {
 
 /* testing */
 .test-left-right {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-areas: 
-    "text image1"
-    "text image2"
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  column-gap: 5px;
+  grid-template-areas: 
+  "text image1"
+  "text image2"
 }
 .test-text {
-  grid-area: "text";
+  grid-area: text;
 }
 .test-image-1 {
-  grid-area: "image1";
+  grid-area: image1;
   object-fit: contain;
 }
 .test-image-2 {
-  grid-area: "image2";
+  grid-area: image2;
+  object-fit: contain;
 }
