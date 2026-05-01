@@ -11,8 +11,9 @@
   --background-color: rgb(255, 255, 255);
   --wallpaper-image: url(images/murder-drones-tower-wallpaper.jpeg);
   --primary-color: rgb(0, 0, 0);
-  --secondary-color: rgb(0, 0, 0);
-  --tertiary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(124, 124, 124);
+  --tertiary-color: rgb(50, 50, 50);
+  --caption-color: rgb(180, 180, 180);
 }
 body {
   margin: 0;
@@ -23,7 +24,14 @@ body {
   padding: 16px;
 }
 hr {
-  border-width: 3px;
+  border: 3px solid var(--tertiary-color);
+  box-shadow: 2px 2px;
+}
+.layered {
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
 }
 
 /* header and footer */
@@ -90,7 +98,7 @@ hr {
     "footer footer";
   grid-template-columns: 1.5fr 2.5fr;
   gap: 3px;
-  padding: 5px;
+  padding: 20px;
 }
 /* set teplate area names */
 .grid-header {
@@ -112,6 +120,59 @@ hr {
   background-color: aqua;
 }
 
+
+
+
+/* left right image formating */
+.left-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 5px;
+  grid-template-areas: 
+  "left-up right-up"
+  "left-down right-down"
+}
+.left-right-caption {
+  font-size: small;
+  text-align: right;
+  padding: 1px;
+  margin: 1px;
+  color: var(--caption-color)
+
+}
+.left-right-img {
+  background-image: var(--wallpaper-image);
+  
+}
+.left-right .left-up {
+  grid-area: left-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .left-down {
+  grid-area: left-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .right-up {
+  grid-area: right-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .right-down {
+  grid-area: right-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
 
 
 
